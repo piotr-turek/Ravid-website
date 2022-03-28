@@ -1,0 +1,535 @@
+/*GENERAL*/
+* {
+  margin: 0;
+  /*zewnętrzny margines*/
+  padding: 0;
+  /*wewnętrzny margines*/
+  box-sizing: border-box;
+  /*zmienia zachowanie elementów na stronie ale to później*/
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 12px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+div, nav, main, footer, main {
+  /*border: 1px solid rgba(250, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  /*margin: -1px -1px -1px -1px;*/
+}
+
+h1 {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-family: Cinzel;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+h2 {
+  color: black;
+  text-decoration: none;
+  font-family: Cinzel;
+  font-size: 28px;
+  text-align: center;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+p {
+  color: black;
+}
+
+.fa-vimeo-v, .fa-youtube, .fa-facebook-f {
+  color: #383838;
+}
+
+.fa-vimeo-v:hover {
+  color: #86c9ef;
+}
+
+.fa-youtube:hover {
+  color: #b2071d;
+}
+
+.fa-facebook-f:hover {
+  color: #39569c;
+}
+
+body {
+  background-color: lightgray;
+}
+
+/*endofGENERAL*/
+/* HEADER */
+header {
+  height: 1000px;
+  position: relative;
+  background-image: url("img/home_background.jpg");
+  background-position: left 52% bottom -200px;
+  background-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_child {
+  margin: 3px;
+}
+
+nav img {
+  width: 130px;
+}
+
+.social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: center;
+  margin: 7px;
+}
+
+.fa-vimeo-v, .fa-youtube, .fa-facebook-f {
+  transition: 0.3s;
+  color: #555555;
+}
+
+@media (min-width: 576px) {
+  nav {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav_home {
+    display: flex;
+    align-items: center;
+    order: 1;
+  }
+
+  .nav_portfolio {
+    order: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_blog {
+    order: 3;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_logo {
+    align-items: center;
+    order: 4;
+  }
+
+  .socialgroup_nav {
+    order: 5;
+  }
+
+  .nav_o_nas {
+    order: 6;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_oferta {
+    order: 7;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_kontakt {
+    order: 8;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_child {
+    margin: 3px;
+  }
+
+  nav img {
+    width: 130px;
+  }
+
+  .social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    margin: 7px;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 250px;
+  }
+
+  nav img {
+    width: 160px;
+    margin-top: 20px;
+    margin-bottom: -5px;
+  }
+
+  .nav_home {
+    order: 1;
+    flex-basis: 100%;
+    margin-top: -10px;
+  }
+
+  .nav_portfolio {
+    order: 2;
+    flex-basis: 100%;
+    margin-top: -10px;
+  }
+
+  .nav_blog {
+    order: 3;
+    flex-basis: 100%;
+    margin-top: -10px;
+  }
+
+  .nav_logo {
+    order: 4;
+  }
+
+  .socialgroup_nav {
+    order: 5;
+    break-after: always;
+  }
+
+  .nav_o_nas {
+    order: 6;
+    flex-basis: 100%;
+    margin-top: -10px;
+  }
+
+  .nav_oferta {
+    order: 7;
+    flex-basis: 100%;
+    margin-top: -10px;
+  }
+
+  .nav_kontakt {
+    order: 8;
+    flex-basis: 100%;
+    margin-top: -10px;
+  }
+}
+
+/*endofHEADER*/
+/*MAIN*/
+main {
+  background-color: lightgray;
+  position: relative;
+}
+
+#quote {
+  height: 500px;
+  background-color: white;
+  padding: 50px;
+}
+
+#quote h2 {
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+  max-height: 500px;
+}
+
+.blogmain {
+  position: relative;
+  background-color: #F5F5F5;
+  height: 1000px;
+  width: 100%;
+}
+
+#rings {
+  position: relative;
+  height: 500px;
+  background-image: url(img/obraczki.jpg);
+  background-position: center bottom -330px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+  background-width: 100%;
+}
+
+/*endofMAIN*/
+/*FOOTER*/
+footer {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px lightgray solid;
+}
+
+.footercontainer {
+  display: flex;
+  position: relative;
+  top: 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin-top: 1px;
+  align-items: center;
+}
+
+.footer_copyright {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.copyright_text {
+  font-family: Cinzel;
+  font-size: 12px;
+}
+
+.socialgroup_footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+.social_footer {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: center;
+  margin: 7px;
+}
+
+.arrow {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  top: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer .fa-angle-up:hover {
+  color: black;
+}
+
+footer .fa-vimeo-v, footer .fa-youtube, footer .fa-facebook-f, footer .fa-angle-up, footer .footer_copyright {
+  color: gray;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .footercontainer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .socialgroup_footer {
+    bottom: 40px;
+  }
+}
+
+/*endofFOOTER*/
+/*O_NAS*/
+.o_nas_head {
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+}
+
+.o_nas_head_text {
+  font-size: 35px;
+}
+
+.o_nas_desc {
+  width: 100%;
+  padding: 5%;
+  padding-top: 0px;
+  text-align: justify;
+  overflow: hidden;
+  background-color: white;
+}
+
+.o_nas_desc_text {
+  font-family: Cinzel;
+  font-size: 20px;
+}
+
+/*endofO_NAS*/
+/*KONTAKT*/
+.messenger {
+  color: #39569c;
+  transition: 0.3s;
+}
+
+.messenger:hover {
+  opacity: 50%;
+}
+
+/*endofKONTAKT*/
+/*OFERTA*/
+.oferta_button {
+  font-size: 30px;
+  font-family: Cinzel;
+  transition: 0.3s;
+  border: 1px black solid;
+  padding: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 30px;
+}
+
+.oferta_button:hover {
+  opacity: 50%;
+}
+
+/*endofOFERTA*/
+/*PORTFOLIO*/
+/*.video_container {
+  width: 100%;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.video_container iframe {
+width: 100%;
+height: 300px;
+}*/
+.video_container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video_container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background-color: white;
+}
+
+#portfolio_container {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.portfolio_child {
+border: 1px lightgray solid;
+position: relative;
+width: 300px;
+height: 300px;
+overflow: hidden;
+margin: 5px;
+}
+
+.gallery_image {
+object-fit: cover;
+height: 100%;
+width: 100%;
+transition: 0.3s;
+}
+
+.gallery_image:hover {
+    opacity: 95%;
+    transform: scale(1.1);
+}
+/*endofPORTFOLIO*/
+/*RESPONSIVE*/
+@media (min-width: 576px) {
+  #quote h2 {
+    font: Cinzel;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+  #quote h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {}
+
+/*endofRESPONSIVE*/
